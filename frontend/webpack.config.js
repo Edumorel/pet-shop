@@ -16,7 +16,12 @@ const rulesJS = {
 	},
 }
 
-const rules = [rulesJS]
+const rulesCSS = {
+	test: /\.css$/,
+	use: ['style-loader', 'css-loader'],
+}
+
+const rules = [rulesJS, rulesCSS]
 
 module.exports = {
 	entry: './src/main.jsx',

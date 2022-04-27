@@ -1,0 +1,51 @@
+.menu_nav {
+}
+
+.show_nav {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(200, 120, 0);
+	border: solid 2px rgb(60, 27, 0);
+	cursor: pointer;
+	border-radius: 5px;
+	left: 0;
+}
+
+.show_nav .menu_icon {
+	width: 70%;
+	fill: #fff;
+}
+
+.nav {
+	position: absolute;
+	top: calc(100% + 8px);
+	background-color: rgb(255, 166, 0);
+	display: flex;
+	gap: 15px;
+}
+
+.show_nav.active ~ .nav {
+	display: flex;
+}
+
+.nav_item_link {
+	color: #fff;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 5px;
+}
+
+.nav_item_icon {
+	font-size: 16px;
+	transition: transform 0.5s ease;
+	transform: rotate(0);
+}
+
+.nav_item_link:hover .nav_item_icon {
+	transform: rotate(-180deg);
+}
